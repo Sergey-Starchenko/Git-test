@@ -2,6 +2,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+
 h2 {
 	font-size: 45px;
 }
@@ -45,32 +46,43 @@ a {
 }
 
 .grid-item-bg {
+	grid-area: a;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
 	background-image: url(https://www.pbs.org/wnet/nature/files/2018/07/Bear133-1280x720.jpg);
 }
 .grid-item-gray {
+	grid-area: b;
 	background-color: #f3f3f3;
 }
 
 .grid-item-blue {
+	grid-area: c;
 	background-image: url(https://us.123rf.com/450wm/shottythefirst/shottythefirst1506/shottythefirst150600008/41563567-3d-render-graphic-art-background-artistic-wave-effect-for-abstract-banner-quality-closeup-picture-bl.jpg?ver=6);
 
 }
 
 .grid-item-beige {
+	grid-area: d;
 	background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190222/ourmid/pngtree-trendy-minimalist-blue-splash-background-inkbackground-image_58341.jpg );
 }
 
 .grid-item-black {
+	grid-area: e;
 	background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-blue-watercolor-splash-background-ink-image_84450.jpg);
 }
 .grid-item-human {
+	grid-area: f;
 	background-image: url(https://tvkinoradio.ru/upload/ckeditor/article/images/anne_textless_005.jpg);
 }
 
 .grid-item-green {
+	grid-area: g;
 	background-image: url(https://pw.artfile.me/wallpaper/23-04-2018/650x366/kompyutery--unknown--raznoe-zastavki-1331362.jpg);
 
 }
+
 
 .form {
 	max-width: 620px;
@@ -97,6 +109,8 @@ a {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
+	padding: 60px 55px;
+
 
 }
 .grid-item-blue {
@@ -126,5 +140,26 @@ a {
 }
 .list>li>a.list-dr  {
 	background-image: url(https://img.icons8.com/plasticine/2x/twitter.png);
-	 
+
+}
+.span {
+	display: block;
+}
+button {
+	width: 33px;
+	height: 33px;
+	margin-bottom: 25px;
+}
+.grid {
+	width: 1000px;
+    margin: 20px auto;
+	display: grid;
+	grid-template-areas: 
+	"a a a a a a b b b"
+	"c c c c d d d d d"
+	"c c c c e e e e e"
+	"f f f g g g g g g";
+	@media screen and (max-width: 600px) {
+		grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
+	}
 }
