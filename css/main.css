@@ -1,5 +1,130 @@
 body {
-	background-color: blue;
-	float: left;
-	font: 1em sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+	font-size: 45px;
+}
+
+h3 {
+	font-size: 42px;
+}
+
+h4 {
+	font-size: 40px;
+}
+h2, h3, h4 {
+	font-weight: 200;	
+	margin-top: 0;
+}
+span {
+		font-weight: 900;
+	}
+p {
+	font-size: 15px;
+	line-height: 28px ;
+	margin-bottom: 0;
+
+}
+a, input, textarea {
+	font-size: 15px;
+	color: #f3f3f3;
+
+}
+
+a {
+	color: red;
+	text-decoration: none;
+	border: 1px solid red;
+	border-radius: 5px;
+	padding: 5px;
+	display: block;
+	max-width: 150px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.grid-item-bg {
+	background-image: url(https://www.pbs.org/wnet/nature/files/2018/07/Bear133-1280x720.jpg);
+}
+.grid-item-gray {
+	background-color: #f3f3f3;
+}
+
+.grid-item-blue {
+	background-image: url(https://us.123rf.com/450wm/shottythefirst/shottythefirst1506/shottythefirst150600008/41563567-3d-render-graphic-art-background-artistic-wave-effect-for-abstract-banner-quality-closeup-picture-bl.jpg?ver=6);
+
+}
+
+.grid-item-beige {
+	background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190222/ourmid/pngtree-trendy-minimalist-blue-splash-background-inkbackground-image_58341.jpg );
+}
+
+.grid-item-black {
+	background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-blue-watercolor-splash-background-ink-image_84450.jpg);
+}
+.grid-item-human {
+	background-image: url(https://tvkinoradio.ru/upload/ckeditor/article/images/anne_textless_005.jpg);
+}
+
+.grid-item-green {
+	background-image: url(https://pw.artfile.me/wallpaper/23-04-2018/650x366/kompyutery--unknown--raznoe-zastavki-1331362.jpg);
+
+}
+
+.form {
+	max-width: 620px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.form input, .form textarea {
+	background-color: transparent;
+	border: 1px solid red;
+	border-radius: 10px;
+	margin-bottom: 12px;
+	padding: 10px 15px;
+}
+
+.form input {
+	width: calc(48% - 30px);
+}
+
+.form textarea {
+	width: 100%;
+}
+.grid-item-human, .grid-item-green, .grid-item-black, .grid-item-blue, .grid-item-beige, .grid-item-gray {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+}
+.grid-item-blue {
+	color: cornsilk;
+}
+.list {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.list>li {
+	margin-right: 5px;
+}
+.list>li>a {
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 40px;
+	display: block;
+	border: none;
+}
+
+.list>li>a.list-fb  {
+	background-image: url(https://swift.ps/wp-content/uploads/2019/12/facebook-1.png);
+}
+.list>li>a.list-dr  {
+	background-image: url(https://img.icons8.com/plasticine/2x/twitter.png);
+	 
 }
